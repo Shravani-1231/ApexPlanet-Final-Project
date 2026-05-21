@@ -1,0 +1,250 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial;
+
+    background:linear-gradient(
+        to right,
+        #667eea,
+        #764ba2
+    );
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+}
+
+
+/* LOGIN BOX */
+
+.login-box{
+
+    background:white;
+
+    width:350px;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0px 0px 20px rgba(0,0,0,0.2);
+}
+
+.login-box input{
+
+    width:100%;
+
+    margin-top:15px;
+}
+
+
+/* MAIN CONTAINER */
+
+.container{
+
+    background:white;
+
+    width:500px;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0px 0px 20px rgba(0,0,0,0.2);
+}
+
+h1{
+
+    text-align:center;
+
+    margin-bottom:20px;
+}
+
+
+/* INPUT SECTION */
+
+.input-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+}
+
+
+/* INPUTS */
+
+input,
+select,
+button{
+
+    padding:12px;
+
+    border-radius:8px;
+
+    border:1px solid gray;
+
+    font-size:16px;
+}
+
+
+/* BUTTONS */
+
+button{
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    background:#667eea;
+
+    color:white;
+
+    border:none;
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+    opacity:0.9;
+}
+
+
+/* SEARCH */
+
+#searchInput{
+
+    margin-top:15px;
+
+    width:100%;
+}
+
+
+/* FILTER BUTTONS */
+
+.filter-buttons{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:15px;
+}
+
+
+/* TASK LIST */
+
+ul{
+
+    margin-top:20px;
+}
+
+li{
+
+    list-style:none;
+
+    background:#f4f4f4;
+
+    margin-bottom:15px;
+
+    padding:15px;
+
+    border-radius:10px;
+}
+
+.completed{
+
+    text-decoration:line-through;
+
+    opacity:0.6;
+}
+
+
+/* TASK BUTTONS */
+
+.task-buttons{
+
+    margin-top:10px;
+
+    display:flex;
+
+    gap:10px;
+}
+
+
+/* DARK MODE */
+
+.dark-mode{
+
+    background:#121212;
+
+    color:white;
+}
+
+.dark-mode .container{
+
+    background:#1e1e1e;
+}
+
+.dark-mode li{
+
+    background:#333;
+}
+
+
+/* PROGRESS BAR */
+
+.progress-container{
+
+    width:100%;
+
+    background:#ddd;
+
+    border-radius:10px;
+
+    margin-top:15px;
+
+    overflow:hidden;
+}
+
+.progress-bar{
+
+    height:20px;
+
+    width:0%;
+
+    background:green;
+
+    transition:0.5s;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:600px){
+
+    .container{
+
+        width:100%;
+    }
+
+    .login-box{
+
+        width:100%;
+    }
+}
